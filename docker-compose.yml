@@ -3,7 +3,7 @@ version: "3.9"
 services:
   db:
     image: postgres:15
-    container_name: card-app-postgres
+    container_name: cards-postgres
     environment:
       POSTGRES_DB: cardsdb
       POSTGRES_USER: postgres
@@ -11,11 +11,11 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - card-app-postgres-data:/var/lib/postgresql/data
+      - cards-postgres-data:/var/lib/postgresql/data
 
   backend:
     build: ./backend
-    container_name: card-app-backend
+    container_name: cards-backend
     ports:
       - "8080:8080"
       - "5005:5005"
@@ -35,11 +35,11 @@ services:
     build:
       context: ./frontend  # Indica a Docker di guardare dentro la sottocartella
       dockerfile: Dockerfile
-    container_name: card-app-frontend
+    container_name: cards-frontend
     ports:
     - "5173:5173"
     depends_on:
     - backend
 
 volumes:
-  card-app-postgres-data:
+  cards-postgres-data:

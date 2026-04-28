@@ -4,10 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function renderTextWithLineBreaks(text) {
+  return text.split('\n').map((line, index) => (
+      <span key={index}>
+      {line}
+        <br />
+    </span>
+  ));
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <App></App>
+  <App>
+    {renderTextWithLineBreaks(`Riga 1\nRiga 2\nRiga 3`)}
+  </App>
   </React.StrictMode>
 );
 

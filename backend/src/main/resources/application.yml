@@ -1,0 +1,12 @@
+spring:
+ datasource:
+  url: jdbc:postgresql://db:5432/cardsdb
+  username: postgres
+  password: postgres
+ jpa:
+  hibernate:
+   ddl-auto: update
+   dialect: org.hibernate.dialect.PostgreSQLDialect
+ hikari:
+  initialization-fail-timeout: 30000
+  connection-timeout: 30000

@@ -1,0 +1,5 @@
+com/example/cards/CardApplication.class
+com/example/cards/controller/CardController.class
+com/example/cards/service/CardService.class
+com/example/cards/model/Card.class
+com/example/cards/repository/CardRepository.class

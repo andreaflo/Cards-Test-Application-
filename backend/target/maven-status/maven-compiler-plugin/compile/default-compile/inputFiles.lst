@@ -1,0 +1,5 @@
+/home/andrea/IdeaProjects/JAVA/card-app/backend/src/main/java/com/example/cards/CardApplication.java
+/home/andrea/IdeaProjects/JAVA/card-app/backend/src/main/java/com/example/cards/controller/CardController.java
+/home/andrea/IdeaProjects/JAVA/card-app/backend/src/main/java/com/example/cards/model/Card.java
+/home/andrea/IdeaProjects/JAVA/card-app/backend/src/main/java/com/example/cards/repository/CardRepository.java
+/home/andrea/IdeaProjects/JAVA/card-app/backend/src/main/java/com/example/cards/service/CardService.java

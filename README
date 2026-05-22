@@ -1,1 +1,4 @@
-test
+Test Application demonstrating the usage of Docker and Git
+Frontend : React
+Backend: Java Spring
+Database: PostgreSQL
